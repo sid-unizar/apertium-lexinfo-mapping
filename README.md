@@ -36,6 +36,34 @@ When no 1:1 mapping is available, there are three scenarios:
    3.  Mapping  the tag to LexInfo would require to turn to a module of OntoLex-_lemon_ to properly introduce the link. This only happens with syntactic frames in this list of tags. 
 
 
+**For each POS tag**, the following table provides ...
+
+1. The lexinfo individual(s) that are instantiated throughout the data to encode that pos 
+2. The list of Apertium tags (varying in granularity) for that pos in the data
+3. The suggested pos abbreviation to use in `ontolex:LexicalEntry`  URIs, based on the [Universal Dependencies tagset](https://universaldependencies.org/u/pos/).
+ 
+
+| POS       | Lexinfo Individual           | Apertium tag  | Abbreviation for URI (UD-based)
+| ------------- |:-------------:| -----:| -----:|
+| adjective      | adjective, presentParticipleAdjective, | A, Adj, ADJ, Der_las, pprs, short, sint | adj | 
+| adposition     | adposition, postposition, preposition |  Adp, ADP, Po, post, pr, Pr, prep, Rabl, Racc, Rdat, Rgen, Rins, Rloc, Rnom | adp
+|adverb | adverb      |   adv, Adv,gna  | adv
+| proper noun      | properNoun | ant, hyd, np, org, Org, pat, Prop, top | propn  
+| punctuation    | punctuation, comma  |  apos, comma, dash, guio, lquot, punct, quot, quote, rquot | punct
+| determiner     | article, determiner, demonstrativeDeterminer | art, det, DET, detNT, detnt, dst, prx | det
+| conjunction    | conjunction, coordinatingConjunction | cnj,CC | conj
+| noun   | noun | cog, Der_eapmi, Der_muš, Der_vuohta, G3, n, N, nn, Plc, subs | noun
+| verb    | copula, verb | cop, Neg, sep, v, V, vbavea, vbdo, vbhaver, vblex, vbloc, vbser, VGen | verb
+| auxiliary verb | verb, modal | vaux, mod, vbmod | aux 
+| particle   | particle | emph, mod_ass, mod_ind, Pcle, qst, Qst, vpart | particle
+| interjection   | interjection | ij, interj  | intj
+| symbol    | openParenthesis, questionMark, closeParenthesis | lpar, lquest, rpar| symb
+| numeral   | numeral | num, Num  | num
+| pronoun    | personalPronoun, pronoun, reflexivePersonalPronoun, relativePronoun, reciprocalPronoun| pers, Pers, prn, pron, Pron, ref, rel, res | pron
+
+
+
+
 
 **Contributors**:
  
@@ -47,6 +75,8 @@ https://github.com/acoli-repo/acoli-dicts/blob/master/stable/apertium/apertium.t
 Original set of tags used in the Apertium family of dictionaries: https://github.com/apertium/apertium-trunk
 
 **References**: 
+
+Gracia, J., Villegas, M., Gomez-Perez, A., & Bel, N. (2018). The apertium bilingual dictionaries on the web of data. Semantic Web, 9(2), 231-240.
 
 Donandt, K., & Chiarcos, C. (2019). Translation inference through multi-lingual word embedding similarity. In Proc. of TIAD-2019 Shared Task Translation Inference Across Dictionaries, at 2nd Language Data and Knowledge (LDK) conference. CEUR-WS.
 
