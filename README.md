@@ -10,6 +10,8 @@ Steps:
 
 2. Individual by individual (or tag by tag), by relying on the `rdf:label`(s), a match in LexInfo was manually searched. See below for details on this. 
 
+   > Update July 2020: manual addition of tags to this initial list of mappings, on the basis of Apertium's List of Symbols: https://wiki.apertium.org/wiki/List_of_symbols
+
 3. This CVS/TSV does not explicitly provide equivalence relations between Apertium individuals and LexInfo individuals, but triple replacement instructions to apply to _an intermediate shallow RDF conversion_ (see Donandt, K., and Chiarcos, C. (2019)). Sometimes an Apertium individual will indeed be replaced by its LexInfo individual (if available), but this does not hold for all rows. 
 
 Apertium individuals occur as object of `lexinfo:morphosyntacticProperty` in the intermediate RDF. The CVS provides "predicate - object" pairs for each of those Apertium tags acting as object. That is, if a row of the the CVS reads ```apertium:acc, lexinfo:case, lexinfo:accusativeCase```, this row is intended to guide this update:
