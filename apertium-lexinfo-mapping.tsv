@@ -434,8 +434,7 @@ apertium:NK_HU	lexinfo:morphosyntacticProperty	apertium:NK_HU
 apertium:NK_NI	lexinfo:morphosyntacticProperty	apertium:NK_NI		
 apertium:NK_ZK	lexinfo:morphosyntacticProperty	apertium:NK_ZK		
 apertium:NK_ZU	lexinfo:morphosyntacticProperty	apertium:NK_ZU		
-apertium:nm	lexinfo:morphosyntacticProperty	apertium:nm		
-apertium:nn	lexinfo:partOfSpeech	lexinfo:noun	noun	
+apertium:nm	lexinfo:morphosyntacticProperty	apertium:nm
 apertium:nn	lexinfo:animacy	lexinfo:inanimate		
 apertium:NO	lexinfo:morphosyntacticProperty	apertium:NO		
 apertium:NOLARR	lexinfo:morphosyntacticProperty	apertium:NOLARR		
