@@ -581,8 +581,10 @@ apertium:pro	lexinfo:cliticness	lexinfo:bound
 apertium:pro	lexinfo:morphosyntacticProperty	apertium:pro		
 apertium:PRO	lexinfo:morphosyntacticProperty	apertium:PRO		
 apertium:probj	lexinfo:morphosyntacticProperty	apertium:probj		
-apertium:pron	lexinfo:partOfSpeech	lexinfo:pronoun	pron	
-apertium:Pron	lexinfo:partOfSpeech	lexinfo:pronoun	pron	
+apertium:pron	lexinfo:partOfSpeech	lexinfo:verb	verb
+apertium:pron	lexinfo:morphosyntacticProperty	apertium:pron
+apertium:Pron	lexinfo:partOfSpeech	lexinfo:verb	verb
+apertium:Pron	lexinfo:morphosyntacticProperty	apertium:Pron
 apertium:Prop	lexinfo:partOfSpeech	lexinfo:properNoun	propn	
 apertium:prp	lexinfo:case	apertium:prp		
 apertium:prperf	lexinfo:morphosyntacticProperty	apertium:prperf		
