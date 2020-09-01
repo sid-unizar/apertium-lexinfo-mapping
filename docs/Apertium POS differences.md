@@ -1,3 +1,4 @@
+
 # Apertium POS differences 
 25.08.20
 @(Prêt-à-LLOD)
@@ -5,6 +6,8 @@ Julia Bosque-Gil
 University of Zaragoza
 jbosque@unizar.es
 Thanks to Shashwat Goel's work on identifying pairs with different POS and pointing out corrections in the mapping table. 
+
+> CC -- Comments by Christian Chiarcos, 2020-08-31
 
 Building on [Christian Chiarcos' table in GitHub](https://github.com/acoli-repo/acoli-dicts/issues/9), I have taken those paris of Apertium RDF entries with different POS tags and compared them in source data > intermediate RDF > Apertium list of tags + mapping table > SPARQL endpoint to locate the source of the difference.   
 
@@ -22,6 +25,8 @@ apertium:nn rdfs:label "inanimate" .
 apertium:nn rdfs:label "Неодушевленное" ."
 ```
 , which led me to **wrongly** think that `:nn` was an inanimate NOUN, so that tag is wrongly mapped to `lexinfo:noun` as POS (in addition to `lexinfo:animacy lexinfo:inanimate`).  This affects multiple (relative) pronouns that are inanimate and after the mapping they end up with two parts of speech. Mapping table corrected now, and only animacy is encoded by `:nn`.  **This should solve most mismatches there** (if we run everything again). 
+
+> CC: TOCHECK: it seems the abbreviation `nn` is used differently in different Apertium sets. What language does "Noun noun" come from? If that is the case, this should be fixed in Apertium, not here.
 
 - relativePronoun-adverb and pronoun-adverb mismatches. Some of these are coming from lines like the ones below: 
 ```
@@ -47,6 +52,8 @@ EN-ES
 
 But in the SPARQL the entry `:lexiconES/donde-rel-es` does indeed show two POS, adverb and relative pronoun (no other suspicious features). I assume for these cases there must be a line like the one of _quand_ and _quan_  *in at least one dictionary* where "donde" receives both "rel" and "adv". Further analysis needed. 
 
+> CC: Possible source is URI generation during OntoLex conversion: As the SPARQL query returns the lexical entry, this seems to indicate that lexical entries with different POSes generate the same URI and thus get conflated.
+
 - personalPronoun and determiner mismatches. Similar issue in the source data as above, e.g. the lexical entry *en* in OC receives both tags, det (`lexinfo:determiner`) and pers (`lexinfo:personalPronoun`)
 ```
 <e r="RL" alt="oc">
@@ -62,11 +69,14 @@ But in the SPARQL the entry `:lexiconES/donde-rel-es` does indeed show two POS, 
 ```
 <e r="RL"><p><l>combien<s n="rel"/><s n="adv"/></l><r>quant<s n="rel"/><s n="nn"/><s n="f"/><s n="pl"/></r></p></e>
 ```
-
+> CC: see above
+>
 - verb-pronoun mismatches. Shashwat pointed out to me that the tag `apertium:pron` referred to a pronominal verb, not to a pronoun. Mapping table updated. **This should solve all errors found in this section. **
 - pronoun-presentParticipleAdjective mismatches. A combination of the previous points: 
 	- What is "pronoun" should be "verb" according to the updated mapping (incorrect mapping `apertium:pron` to `lexinfo:pron` instead of  to `lexinfo:verb`). So here we have verb-presentParticipleAdjective mismatches. 
 	- There must be least one line in an English dictionary in which the word on the right column is tagged as both `apertium:vblex` and `apertium:pprs`. 
-- noun - pronerNoun mismatches. In the mapping table not all subclasses of proper nouns where mapped as such, taking as starting point only the labels that we had for these tags. I recently updated the mapping with the Apertium documentation on these subclasses (ant, top, hyd, cog, org, al, pat), so most of these mismatches should disappear in the next version of the RDF. 
+- noun - properNoun mismatches. In the mapping table not all subclasses of proper nouns where mapped as such, taking as starting point only the labels that we had for these tags. I recently updated the mapping with the Apertium documentation on these subclasses (ant, top, hyd, cog, org, al, pat), so most of these mismatches should disappear in the next version of the RDF. 
 
-Last updated: 25.08.20
+> CC: The label information in the Apertium namespace is generated from the dictionaries, but not all dictionaries provide label information. It is well possible, thus, that for a particular language, a particular abbreviation is used differently that the labels indicate. 
+
+Last updated: 31.08.20
