@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7b764a6e-591b-459a-b091-ea80df0f0f38" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/docs/Apertium POS differences.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Apertium POS differences.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1c5QHmy4MninICGByJza6coTOlI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/README.md" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jbosg\PycharmProjects\apertium-lexinfo-mapping\deprecated" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\jbosg\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b764a6e-591b-459a-b091-ea80df0f0f38" name="Default Changelist" comment="" />
+      <created>1589815888753</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589815888753</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Extend readme file">
+      <created>1589816811391</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589816811391</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add mapping in tsv and csv formats">
+      <created>1589817486585</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589817486585</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add POS mapping summary also with UD">
+      <created>1590080589303</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590080589303</updated>
+    </task>
+    <task id="LOCAL-00004" summary="reviewed and updated mapping with Apertium Wiki">
+      <created>1595949132526</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595949132526</updated>
+    </task>
+    <task id="LOCAL-00005" summary="apertium:pron for Pronominal Verb - issue #1 solved">
+      <created>1598259074003</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1598259074003</updated>
+    </task>
+    <task id="LOCAL-00006" summary="corrected apertium:nn">
+      <created>1598278616786</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1598278616786</updated>
+    </task>
+    <task id="LOCAL-00007" summary="pos differences analysis">
+      <created>1598345694063</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1598345694063</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Extend readme file" />
+    <MESSAGE value="Add mapping in tsv and csv formats" />
+    <MESSAGE value="add POS mapping summary also with UD" />
+    <MESSAGE value="reviewed and updated mapping with Apertium Wiki" />
+    <MESSAGE value="apertium:pron for Pronominal Verb - issue #1 solved" />
+    <MESSAGE value="corrected apertium:nn" />
+    <MESSAGE value="pos differences analysis" />
+    <option name="LAST_COMMIT_MESSAGE" value="pos differences analysis" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1598345708704">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1598345708704" />
+    <state x="2691" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600692677497">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2691" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600692677497" />
+  </component>
+</project>

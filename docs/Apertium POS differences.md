@@ -8,6 +8,8 @@ jbosque@unizar.es
 Thanks to Shashwat Goel's work on identifying pairs with different POS and pointing out corrections in the mapping table. 
 
 > CC -- Comments by Christian Chiarcos, 2020-08-31
+> 
+>JBG -- Comments by Julia Bosque-Gil, 2020-09-21
 
 Building on [Christian Chiarcos' table in GitHub](https://github.com/acoli-repo/acoli-dicts/issues/9), I have taken those paris of Apertium RDF entries with different POS tags and compared them in source data > intermediate RDF > Apertium list of tags + mapping table > SPARQL endpoint to locate the source of the difference.   
 
@@ -27,6 +29,8 @@ apertium:nn rdfs:label "Неодушевленное" ."
 , which led me to **wrongly** think that `:nn` was an inanimate NOUN, so that tag is wrongly mapped to `lexinfo:noun` as POS (in addition to `lexinfo:animacy lexinfo:inanimate`).  This affects multiple (relative) pronouns that are inanimate and after the mapping they end up with two parts of speech. Mapping table corrected now, and only animacy is encoded by `:nn`.  **This should solve most mismatches there** (if we run everything again). 
 
 > CC: TOCHECK: it seems the abbreviation `nn` is used differently in different Apertium sets. What language does "Noun noun" come from? If that is the case, this should be fixed in Apertium, not here.
+> 
+> JBG (2020-09-21). Checked. Max Ionov and I just confirmed this:  it turns out that `nn` is defined as "Noun noun" in hbs-mkd and hbs-slv dictionary pairs, but the tag is later not used in the entries. So it seems safe (for now) to keep `aperium:nn` as `lexinfo:inanimate`. TO-REPORT to the Apertium community (not sure if it is an error or indeed an intended different meaning for `nn`).    
 
 - relativePronoun-adverb and pronoun-adverb mismatches. Some of these are coming from lines like the ones below: 
 ```
@@ -53,6 +57,12 @@ EN-ES
 But in the SPARQL the entry `:lexiconES/donde-rel-es` does indeed show two POS, adverb and relative pronoun (no other suspicious features). I assume for these cases there must be a line like the one of _quand_ and _quan_  *in at least one dictionary* where "donde" receives both "rel" and "adv". Further analysis needed. 
 
 > CC: Possible source is URI generation during OntoLex conversion: As the SPARQL query returns the lexical entry, this seems to indicate that lexical entries with different POSes generate the same URI and thus get conflated.
+>
+> JBG (2020-09-21). Found it, there is a line in the EO-ES in which _donde_ does receive two POS tags:
+>``` 
+><e><p><l>kie<s n="rel"/><s n="adv"/></l><r>donde<s n="rel"/><s n="adv"/></r></p></e>
+>```
+> so even if in the source data of the dictionaries mentioned above (e.g. ES-ES) _donde_ only has one POS (rel), in the description of `:lexiconES/donde-rel-es`the `lexinfo:adverb` statement can come from the Spanish portion EO-ES. And then comparing the POSes in EN with the POSes of their translations raises the mismatch red flag.   
 
 - personalPronoun and determiner mismatches. Similar issue in the source data as above, e.g. the lexical entry *en* in OC receives both tags, det (`lexinfo:determiner`) and pers (`lexinfo:personalPronoun`)
 ```
@@ -78,5 +88,7 @@ But in the SPARQL the entry `:lexiconES/donde-rel-es` does indeed show two POS, 
 - noun - properNoun mismatches. In the mapping table not all subclasses of proper nouns where mapped as such, taking as starting point only the labels that we had for these tags. I recently updated the mapping with the Apertium documentation on these subclasses (ant, top, hyd, cog, org, al, pat), so most of these mismatches should disappear in the next version of the RDF. 
 
 > CC: The label information in the Apertium namespace is generated from the dictionaries, but not all dictionaries provide label information. It is well possible, thus, that for a particular language, a particular abbreviation is used differently that the labels indicate. 
+> 
+> JBG (2020-09-21): If after the next RDF conversion round there are still mismatches that cannot be ascribed to an entry with more than a POS in at least a dictionary in the XML source data (as we saw with _donde_, and _quant_ above), they must be the case that you suggest. TOCHECK after next conversion.
 
-Last updated: 31.08.20
+Last updated: 21.09.20
