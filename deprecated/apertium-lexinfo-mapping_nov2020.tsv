@@ -1,6 +1,4 @@
-"Apertium individual as object in a triple,""Property to use with lexical entry as subject"				
-"(not necessarily pos)"",""Lexinfo individual OR Apertium individual OR blank node"				
-"as object"",Abbreviation for URI,Comments"				
+"Apertium individual"	"Property"	"Object"	"UD tag"	"Comments"
 apertium::0	lexinfo:morphosyntacticProperty	apertium::0		
 apertium::1	lexinfo:morphosyntacticProperty	apertium::1		
 apertium::2	lexinfo:morphosyntacticProperty	apertium::2		
@@ -19,7 +17,7 @@ apertium:aa	lexinfo:animacy	lexinfo:animate
 apertium:abb	lexinfo:termType	lexinfo:abbreviation		
 apertium:abbr	lexinfo:termType	lexinfo:abbreviation		
 apertium:ABBR	lexinfo:termType	lexinfo:abbreviation		
-apertium:abe	 lexinfo:case	 lexinfo:abessiveCase		
+apertium:abe	lexinfo:case	lexinfo:abessiveCase
 apertium:ABL	lexinfo:case	lexinfo:ablativeCase		
 apertium:abl	lexinfo:case	lexinfo:ablativeCase		
 apertium:ABS	lexinfo:morphosyntacticProperty	apertium:ABS		
@@ -39,7 +37,7 @@ apertium:ADB	lexinfo:morphosyntacticProperty	apertium:ADB
 apertium:add_comp	lexinfo:degree	lexinfo:comparative		
 apertium:add_ela	lexinfo:case	lexinfo:elativeCase		
 apertium:add_sup	lexinfo:degree	lexinfo:superlative		
-apertium:ade	 lexinfo:case	 lexinfo:adessiveCase		
+apertium:ade	lexinfo:case	lexinfo:adessiveCase
 apertium:ADI	lexinfo:morphosyntacticProperty	apertium:ADI		
 apertium:ADIZE	lexinfo:morphosyntacticProperty	apertium:ADIZE		
 apertium:adj	lexinfo:partOfSpeech	lexinfo:adjective	adj	
@@ -131,8 +129,8 @@ apertium:Cmp	lexinfo:morphosyntacticProperty	apertium:Cmp
 apertium:cni	lexinfo:verbFormMood	lexinfo:conditional		
 apertium:cnj	lexinfo:partOfSpeech	lexinfo:conjunction	conj	
 apertium:cnjadv	lexinfo:morphosyntacticProperty	apertium:cnjadv		
-apertium:cnjadv	lexinfo:partOfSpeech	 lexinfo:adverb	 adv	
-apertium:cnjadv	lexinfo:partOfSpeech	 lexinfo:subordinatingConjunction	 sconj	
+apertium:cnjadv	lexinfo:partOfSpeech	lexinfo:adverb	adv
+apertium:cnjadv	lexinfo:partOfSpeech	lexinfo:subordinatingConjunction	sconj
 apertium:cnjcoo	lexinfo:partOfSpeech	lexinfo:coordinatingConjunction	cconj	
 apertium:cnjloc	lexinfo:morphosyntacticProperty	apertium:cnjloc		
 apertium:cnjsub	lexinfo:partOfSpeech	lexinfo:subordinatingConjunction	sconj	
@@ -403,10 +401,10 @@ apertium:mod	lexinfo:partOfSpeech	lexinfo:particle	part
 apertium:MOD	lexinfo:morphosyntacticProperty	apertium:MOD		
 apertium:MOD	lexinfo:partOfSpeech	lexinfo:particle	part	
 apertium:mod_ass	lexinfo:morphosyntacticProperty	apertium:mod_ass		
-apertium:mod_ass	lexinfo:partOfSpeech	lexinfo:particle	particle	
+apertium:mod_ass	lexinfo:partOfSpeech	lexinfo:particle	part
 apertium:MOD_DENB	lexinfo:morphosyntacticProperty	apertium:MOD_DENB		
 apertium:mod_ind	lexinfo:morphosyntacticProperty	apertium:mod_ind		
-apertium:mod_ind	lexinfo:partOfSpeech	lexinfo:particle	particle	
+apertium:mod_ind	lexinfo:partOfSpeech	lexinfo:particle	part
 apertium:mon	lexinfo:morphosyntacticProperty	apertium:mon		
 apertium:MOS	lexinfo:morphosyntacticProperty	apertium:MOS		
 apertium:MOT	lexinfo:morphosyntacticProperty	apertium:MOT		
@@ -493,7 +491,7 @@ apertium:pasv	lexinfo:morphosyntacticProperty	apertium:pasv
 apertium:pasv	lexinfo:voice	lexinfo:passiveVoice		
 apertium:pat	lexinfo:partOfSpeech	lexinfo:properNoun	propn	
 apertium:pat	lexinfo:morphosyntacticProperty	apertium:pat		
-apertium:Pcle	lexinfo:partOfSpeech	lexinfo:particle	particle	
+apertium:Pcle	lexinfo:partOfSpeech	lexinfo:particle	part
 apertium:PD	lexinfo:person	apertium:PD		
 apertium:pe	lexinfo:morphosyntacticProperty	apertium:pe		
 apertium:pe-an	lexinfo:morphosyntacticProperty	apertium:pe-an		
@@ -671,9 +669,9 @@ apertium:PxSg3	lexinfo:referentType	lexinfo:possessive
 apertium:PxSg3	lexinfo:termElement	lexinfo:suffix		
 apertium:qnt	lexinfo:morphosyntacticProperty	apertium:qnt		
 apertium:qnt	lexinfo:partOfSpeech	lexinfo:pronoun	pron	
-apertium:qst	lexinfo:partOfSpeech	lexinfo:particle	particle	
+apertium:qst	lexinfo:partOfSpeech	lexinfo:particle	part
 apertium:qst	lexinfo:morphosyntacticProperty	apertium:qst		
-apertium:Qst	lexinfo:partOfSpeech	lexinfo:particle	particle	
+apertium:Qst	lexinfo:partOfSpeech	lexinfo:particle	part
 apertium:Qst	lexinfo:morphosyntacticProperty	apertium:Qst		
 apertium:quest	lexinfo:morphosyntacticProperty	apertium:quest		
 apertium:quot	lexinfo:partOfSpeech	lexinfo:punctuation	punct	
@@ -824,7 +822,7 @@ apertium:VGen	lexinfo:morphosyntacticProperty	apertium:VGen
 apertium:VGen	lexinfo:partOfSpeech	lexinfo:verb	verb	
 apertium:vmod	lexinfo:morphosyntacticProperty	apertium:vmod		
 apertium:voc	lexinfo:case	lexinfo:vocativeCase		
-apertium:vpart	lexinfo:partOfSpeech	lexinfo:particle	particle	
+apertium:vpart	lexinfo:partOfSpeech	lexinfo:particle	part
 apertium:vpart	lexinfo:morphosyntacticProperty	apertium:vpart		
 apertium:vpost	lexinfo:morphosyntacticProperty	apertium:vpost		
 apertium:vrbnull	lexinfo:morphosyntacticProperty	apertium:vrbnull		

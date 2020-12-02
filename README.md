@@ -45,26 +45,24 @@ When no 1:1 mapping is available, there are three scenarios:
 3. The suggested pos abbreviation to use in `ontolex:LexicalEntry`  URIs, based on the [Universal Dependencies tagset](https://universaldependencies.org/u/pos/).
  
 
-| POS       | Lexinfo Individual           | Apertium tag  | Abbreviation for URI (UD-based)
+| POS       | Lexinfo Individual           | Apertium tag  | UD Tag
 | ------------- |:-------------:| -----:| -----:|
-| adjective      | adjective, presentParticipleAdjective, | A, Adj, ADJ, Der_las, pprs, short, sint | adj | 
-| adposition     | adposition, postposition, preposition |  Adp, ADP, Po, post, pr, Pr, prep, Rabl, Racc, Rdat, Rgen, Rins, Rloc, Rnom | adp
-|adverb | adverb      |   adv, Adv,gna  | adv
-| proper noun      | properNoun | ant, hyd, np, org, Org, pat, Prop, top | propn  
-| punctuation    | punctuation, comma  |  apos, comma, dash, guio, lquot, punct, quot, quote, rquot | punct
-| determiner     | article, determiner, demonstrativeDeterminer | art, det, DET, detNT, detnt, dst, prx | det
-| conjunction    | conjunction, coordinatingConjunction | cnj,CC | conj
-| noun   | noun | cog, Der_eapmi, Der_muš, Der_vuohta, G3, n, N, nn, Plc, subs | noun
-| verb    | copula, verb | cop, Neg, sep, v, V, vbavea, vbdo, vbhaver, vblex, vbloc, vbser, VGen | verb
-| auxiliary verb | verb, modal | vaux, mod, vbmod | aux 
-| particle   | particle | emph, mod_ass, mod_ind, Pcle, qst, Qst, vpart | particle
-| interjection   | interjection | ij, interj  | intj
-| symbol    | openParenthesis, questionMark, closeParenthesis | lpar, lquest, rpar| symb
-| numeral   | numeral | num, Num  | num
-| pronoun    | personalPronoun, pronoun, reflexivePersonalPronoun, relativePronoun, reciprocalPronoun| pers, Pers, prn, pron, Pron, ref, rel, res | pron
-
-
-
+| adjective      | adjective, presentParticipleAdjective, | A, adj, ADJ, Der_las, pprs, short, sint | ADJ | 
+| adposition     | adposition, postposition, preposition |  Adp, ADP, Po, post, pr, Pr, prep, Rabl, Racc, Rdat, Rgen, Rins, Rloc, Rnom | ADP
+|adverb | adverb      |   adv, Adv, cnjadv, gna, preadv  | ADV
+| proper noun      | properNoun | al, ant, cog, hyd, np, org, Org, pat, Prop, top | PROPN  
+| punctuation    | punctuation, comma, openParenthesis, questionMark, closeParenthesis  |  apos, clb, CLB, cm, comma, dash, guio, lpar, lquest, lquot, percent, punct, quot, quote, rpar, rquot, sent | PUNCT
+| determiner     | article, determiner, demonstrativeDeterminer | art, det, DET, detnt, dst, predet, prx | DET
+| conjunction    | conjunction | cnj, conj | CONJ
+| conjunction    | coordinatingConjunction | CC, cnjcoo | CCONJ
+| conjunction    | subordinatingConjunction | cs, CS, cnjadv, cnjsub | SCONJ
+| noun   | noun | agnt, Der_eapmi, Der_muš, Der_vuohta, G3, n, N,Plc, subs | NOUN
+| verb    | copula, verb | cop, pron, Pron, sep, v, V, vbavea, vbdo, vbhaver, vblex, vbloc, vbser, VGen | VERB
+| auxiliary verb | verb, modal | vaux, vbmod | AUX 
+| particle   | particle | emph, mod, MOD, mod_ass, mod_ind, Pcle, qst, Qst, vpart | PART
+| interjection   | interjection | ij, interj  | INTJ
+| numeral   | numeral | num, Num  | NUM
+| pronoun    | indefinitePronoun, interrogativePronoun,  personalPronoun, pronoun, possessivePronoun, reflexivePersonalPronoun, relativePronoun, reciprocalPronoun, demonstrativePronoun| def, dem, Dem, indef, itg, pers, Pers, pos, prn, qnt, ref, rel, res | PRON
 
 
 **Contributors**:
@@ -82,4 +80,30 @@ Gracia, J., Villegas, M., Gomez-Perez, A., & Bel, N. (2018). The apertium biling
 
 Donandt, K., & Chiarcos, C. (2019). Translation inference through multi-lingual word embedding similarity. In Proc. of TIAD-2019 Shared Task Translation Inference Across Dictionaries, at 2nd Language Data and Knowledge (LDK) conference. CEUR-WS.
 
+---
 
+**Changelog**
+
+Last updated by jubosgil on _2020-12-02_. 
+
+_2020-12-02_
+
++ Change column names in the csv and tsv files (to shorter, cleaner ones)
++ Correct UD tags to uppercase and remove superfluous spaces
++ Add analysis of the multiple labels for a given Apertium tag. The goal was to detect whether a single tag was used with a different meaning in at least one dictionary pair. See the summary table [here](https://github.com/sid-unizar/apertium-lexinfo-mapping/blob/master/docs/Analysis_of_multiple_labels_per_Apertium_tag.xlsx).
++ Remove mappings from the tags `apertium:mf` and `apertium:mfn` (differences across languages). Now they are only introduced with a `lexinfo:gender` property but *not* mapped to `lexinfo:masculine` or `lexinfo:feminine` individuals. See the table mentioned above for details.
++ Update `Readme.md` and POS mapping summary table. 
+
+_2020-08_ and _2020-09_
+
++ Further analysis of the source of POS mismatches (see notes from past months) and curation of the mapping (e.g. `apertium:nn` does not always refer to a noun despite the label "Noun noun" in hbs-mkd and hbs-slv dictionary pairs) 
+
+_2020-07_ 
+ + Manual addition of missing tags to this initial list of mappings on the basis of Apertium's List of Symbols: https://wiki.apertium.org/wiki/List_of_symbols
+ + Some mappings are not included in the Apertium documentation, but now mappings listed there should be included here.
+ + Analysis of POS differences source-target entries. See discussion [here](https://github.com/acoli-repo/acoli-dicts/issues/9), extended with the analysis [here](https://github.com/sid-unizar/apertium-lexinfo-mapping/blob/master/docs/Apertium%20POS%20differences.md)
+ + Curation of the mapping after Issue 1 and the analysis mentioned above 
+ 
+_2020-05-21_ 
+
+Added POS mapping summary table, including UD tag, to `README.md` 
