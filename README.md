@@ -42,9 +42,8 @@ When no 1:1 mapping is available, there are three scenarios:
 
 1. The lexinfo individual(s) that are instantiated throughout the data to encode that pos 
 2. The list of Apertium tags (varying in granularity) for that pos in the data
-3. The suggested pos abbreviation to use in `ontolex:LexicalEntry`  URIs, based on the [Universal Dependencies tagset](https://universaldependencies.org/u/pos/).
+3. The tag from the  [Universal Dependencies tagset](https://universaldependencies.org/u/pos/).
  
-
 | POS       | Lexinfo Individual           | Apertium tag  | UD Tag
 | ------------- |:-------------:| -----:| -----:|
 | adjective      | adjective, presentParticipleAdjective, | A, adj, ADJ, Der_las, pprs, short, sint | ADJ | 
@@ -64,6 +63,7 @@ When no 1:1 mapping is available, there are three scenarios:
 | numeral   | numeral | num, Num  | NUM
 | pronoun    | indefinitePronoun, interrogativePronoun,  personalPronoun, pronoun, possessivePronoun, reflexivePersonalPronoun, relativePronoun, reciprocalPronoun, demonstrativePronoun| def, dem, Dem, indef, itg, pers, Pers, pos, prn, qnt, ref, rel, res | PRON
 
+Another version of this table is provided in the file `Apertium_POS-UD_tag.tsv`. 
 
 **Contributors**:
  
@@ -82,14 +82,15 @@ Donandt, K., & Chiarcos, C. (2019). Translation inference through multi-lingual 
 
 ---
 
-**Changelog**
+**Change log**
 
-Last updated by jubosgil on _2020-12-02_. 
+Last updated by jubosgil on _2020-12-03_. 
 
-_2020-12-02_
+_2020-12_
 
 + Change column names in the csv and tsv files (to shorter, cleaner ones)
 + Correct UD tags to uppercase and remove superfluous spaces
++ Add `Apertium_POS-UD_tag.tsv`
 + Add analysis of the multiple labels for a given Apertium tag. The goal was to detect whether a single tag was used with a different meaning in at least one dictionary pair. See the summary table [here](https://github.com/sid-unizar/apertium-lexinfo-mapping/blob/master/docs/Analysis_of_multiple_labels_per_Apertium_tag.xlsx).
 + Remove mappings from the tags `apertium:mf` and `apertium:mfn` (differences across languages). Now they are only introduced with a `lexinfo:gender` property but *not* mapped to `lexinfo:masculine` or `lexinfo:feminine` individuals. See the table mentioned above for details.
 + Update `Readme.md` and POS mapping summary table. 

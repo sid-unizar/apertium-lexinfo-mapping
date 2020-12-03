@@ -26,14 +26,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b764a6e-591b-459a-b091-ea80df0f0f38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apertium-lexinfo-tags-mapping.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deprecated/apertium-lexinfo-tags-mapping_nov2020.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/Analysis_of_multiple_labels_per_Apertium_tag.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Apertium_POS-UD_tag.tsv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apertium-lexinfo-mapping.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/deprecated/apertium-lexinfo-mapping_nov2020.tsv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apertium-lexinfo-tags-mapping.csv" beforeDir="false" afterPath="$PROJECT_DIR$/apertium-lexinfo-tags-mapping.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deprecated/apertium-lexinfo-tags-mapping_OLD.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/deprecated/apertium-lexinfo-tags-mapping_july2020.tsv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600694930430</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add analysis of multiple labels for a given Apertium tag, correct UD tags in mapping and column names, remove apertium:mf and apertium:mfn mappings, update POS summary table.">
+      <created>1606919713600</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606919713600</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,14 +169,15 @@
     <MESSAGE value="corrected apertium:nn" />
     <MESSAGE value="pos differences analysis" />
     <MESSAGE value="Document sources of apertium:nn mismatch and rel-adv mismatch with Sp. &quot;donde&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Document sources of apertium:nn mismatch and rel-adv mismatch with Sp. &quot;donde&quot;" />
+    <MESSAGE value="add analysis of multiple labels for a given Apertium tag, correct UD tags in mapping and column names, remove apertium:mf and apertium:mfn mappings, update POS summary table." />
+    <option name="LAST_COMMIT_MESSAGE" value="add analysis of multiple labels for a given Apertium tag, correct UD tags in mapping and column names, remove apertium:mf and apertium:mfn mappings, update POS summary table." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2270" y="112" key="Vcs.Push.Dialog.v2" timestamp="1600694937261">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1606919722462">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="2270" y="112" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600694937261" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1598345708704" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1606919722462" />
     <state x="2691" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600692677497">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
