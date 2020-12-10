@@ -94,6 +94,7 @@ _2020-12_
 + Add analysis of the multiple labels for a given Apertium tag. The goal was to detect whether a single tag was used with a different meaning in at least one dictionary pair. See the summary table [here](https://github.com/sid-unizar/apertium-lexinfo-mapping/blob/master/docs/Analysis_of_multiple_labels_per_Apertium_tag.xlsx).
 + Remove mappings from the tags `apertium:mf` and `apertium:mfn` (differences across languages). Now they are only introduced with a `lexinfo:gender` property but *not* mapped to `lexinfo:masculine` or `lexinfo:feminine` individuals. See the table mentioned above for details.
 + Update `Readme.md` and POS mapping summary table. 
++ Add record of those entries which show multiple tags to compare tags of source entry and target entry, available [here](https://github.com/sid-unizar/apertium-lexinfo-mapping/blob/master/docs/multiple_tag_diffs.tsv). The file `multiple_tag_diffs(tags_only).tsv` included in the same folder is another version of that table with only tag lists and removing duplicate rows. 
 
 _2020-08_ and _2020-09_
 
