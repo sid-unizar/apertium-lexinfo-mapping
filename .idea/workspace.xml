@@ -26,9 +26,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b764a6e-591b-459a-b091-ea80df0f0f38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/Analysis_tag_differences.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/multiple_tag_diffs(tags_only).tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/multiple_tag_diffs.tsv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -141,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607022915697</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="analysis of tag differences">
+      <created>1607632510788</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607632510788</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,14 +184,15 @@
     <MESSAGE value="Document sources of apertium:nn mismatch and rel-adv mismatch with Sp. &quot;donde&quot;" />
     <MESSAGE value="add analysis of multiple labels for a given Apertium tag, correct UD tags in mapping and column names, remove apertium:mf and apertium:mfn mappings, update POS summary table." />
     <MESSAGE value="add Apertium_POS-UD_tag.tsv" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Apertium_POS-UD_tag.tsv" />
+    <MESSAGE value="analysis of tag differences" />
+    <option name="LAST_COMMIT_MESSAGE" value="analysis of tag differences" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1607022918670">
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1607632517201">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="2270" y="112" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600694937261" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607022918670" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607632517201" />
     <state x="2691" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600692677497">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

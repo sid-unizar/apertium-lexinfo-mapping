@@ -84,7 +84,7 @@ Donandt, K., & Chiarcos, C. (2019). Translation inference through multi-lingual 
 
 **Change log**
 
-Last updated by jubosgil on _2020-12-03_. 
+Last updated by jubosgil on _2020-12-10_. 
 
 _2020-12_
 
