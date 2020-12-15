@@ -4,7 +4,26 @@ Mapping between Apertium's morphosyntactic tags and the LexInfo Ontology.
 
 Source data of Apertium: https://github.com/apertium/apertium-trunk
 
-Steps:
+Relevant files and documentation: 
+
+- `apertium-lexinfo-tags-mappings.csv`, `apertium-lexinfo-tags-mappings.tsv`. Triple replacement instructions to apply to _an intermediate shallow RDF conversion_, which serves as mapping of Apertium tags to LexInfo and UD tags.  
+
+- `Apertium_POS-UD_tag.tsv` Mapping of Apertium POS tags and UD tags. No information on LexInfo mappings. 
+
+- Table in Markdown at the bottom of this `Readme.md`.  Clustering of the different POS tags in Apertium, individuals in Lexinfo, and UD tags according to POS tag categories. The purpose is to show the heterogeneity of tags per category. 
+
+- `docs\Apertium POS differences.md` Analysis of those cases in which we find a POS tag in the source language entry and a different POS tag in the target language entry in the RDF conversion. 
+
+- `docs\Analysis_of_multiple_labels_per_Apertium_tag.xlsx` List and analysis of those tags in Apertium with multiple labels. The purpose of this table was to detect potential different interpretations of the same tag across dictionaries. 
+
+- `docs\multiple_tag_diffs.tsv` List of entries in Apertium with more than one Apertium tag in the source entry, along with source entry and target entry tags.
+
+- `docs\multiple_tag_diffs(tags_only).tsv` Same information as the previous file, but only with tag combinations (no lemmas and duplicates removed)
+
+- `docs\Analysis_tag_differences.md` Analysis of the previous two files. 
+ 
+
+Methodology and steps:
 
 1. The list of tags extracted from Apertium data was taken as basis for the mapping. This extraction was performed at the Applied Computational Linguistics Group (ACoLi) at Goethe University Frankfurkt, see : https://github.com/acoli-repo/acoli-dicts/blob/master/stable/apertium
 
@@ -12,7 +31,7 @@ Steps:
 
    > Update July 2020: manual addition of tags to this initial list of mappings, on the basis of Apertium's List of Symbols: https://wiki.apertium.org/wiki/List_of_symbols
 
-3. This CVS/TSV does not explicitly provide equivalence relations between Apertium individuals and LexInfo individuals, but triple replacement instructions to apply to _an intermediate shallow RDF conversion_ (see Donandt, K., and Chiarcos, C. (2019)). Sometimes an Apertium individual will indeed be replaced by its LexInfo individual (if available), but this does not hold for all rows. 
+3. This CVS/TSV (`apertium-lexinfo-tags-mappings.csv`) does not explicitly provide equivalence relations between Apertium individuals and LexInfo individuals, but triple replacement instructions to apply to _an intermediate shallow RDF conversion_ (see Donandt, K., and Chiarcos, C. (2019)). Sometimes an Apertium individual will indeed be replaced by its LexInfo individual (if available), but this does not hold for all rows. 
 
 Apertium individuals occur as object of `lexinfo:morphosyntacticProperty` in the intermediate RDF. The CVS provides "predicate - object" pairs for each of those Apertium tags acting as object. That is, if a row of the the CVS reads ```apertium:acc, lexinfo:case, lexinfo:accusativeCase```, this row is intended to guide this update:
 ```xml 
@@ -40,8 +59,8 @@ When no 1:1 mapping is available, there are three scenarios:
 
 **For each POS tag**, the following table provides ...
 
-1. The lexinfo individual(s) that are instantiated throughout the data to encode that pos 
-2. The list of Apertium tags (varying in granularity) for that pos in the data
+1. The lexinfo individual(s) that are instantiated throughout the data to encode that POS
+2. The list of Apertium tags (varying in granularity) for that POS in the data
 3. The tag from the  [Universal Dependencies tagset](https://universaldependencies.org/u/pos/).
  
 | POS       | Lexinfo Individual           | Apertium tag  | UD Tag
@@ -63,8 +82,6 @@ When no 1:1 mapping is available, there are three scenarios:
 | numeral   | numeral | num, Num  | NUM
 | pronoun    | indefinitePronoun, interrogativePronoun,  personalPronoun, pronoun, possessivePronoun, reflexivePersonalPronoun, relativePronoun, reciprocalPronoun, demonstrativePronoun| def, dem, Dem, indef, itg, pers, Pers, pos, prn, qnt, ref, rel, res | PRON
 
-Another version of this table is provided in the file `Apertium_POS-UD_tag.tsv`. 
-
 **Contributors**:
  
 Julia Bosque-Gil (University of Zaragoza): Mapping Apertium-Lexinfo
@@ -84,7 +101,7 @@ Donandt, K., & Chiarcos, C. (2019). Translation inference through multi-lingual 
 
 **Change log**
 
-Last updated by jubosgil on _2020-12-10_. 
+Last updated by jubosgil on _2020-12-15_. 
 
 _2020-12_
 

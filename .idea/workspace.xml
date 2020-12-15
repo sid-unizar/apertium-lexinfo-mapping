@@ -27,7 +27,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7b764a6e-591b-459a-b091-ea80df0f0f38" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607632510788</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update Readme">
+      <created>1607660353940</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1607660353940</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,18 +191,20 @@
     <MESSAGE value="add analysis of multiple labels for a given Apertium tag, correct UD tags in mapping and column names, remove apertium:mf and apertium:mfn mappings, update POS summary table." />
     <MESSAGE value="add Apertium_POS-UD_tag.tsv" />
     <MESSAGE value="analysis of tag differences" />
-    <option name="LAST_COMMIT_MESSAGE" value="analysis of tag differences" />
+    <MESSAGE value="update Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="update Readme" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1607632517201">
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1607660358142">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="2270" y="112" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600694937261" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607632517201" />
-    <state x="2691" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600692677497">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607660358142" />
+    <state x="514" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608047700832">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="2691" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600692677497" />
+    <state x="514" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1608047700832" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1606919186810">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
