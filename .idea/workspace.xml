@@ -151,12 +151,51 @@
       <option name="project" value="LOCAL" />
       <updated>1607660353940</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add documentation">
+      <created>1608055759920</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1608055759920</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix copy-paste typo after apertium:nonpast">
+      <created>1610028428710</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1610028428710</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -176,6 +215,11 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
@@ -192,14 +236,16 @@
     <MESSAGE value="add Apertium_POS-UD_tag.tsv" />
     <MESSAGE value="analysis of tag differences" />
     <MESSAGE value="update Readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="update Readme" />
+    <MESSAGE value="add documentation" />
+    <MESSAGE value="fix copy-paste typo after apertium:nonpast" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix copy-paste typo after apertium:nonpast" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1607660358142">
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1608055763025">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="2270" y="112" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600694937261" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607660358142" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1608055763025" />
     <state x="514" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608047700832">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
