@@ -155,7 +155,7 @@ apertium:Cond3	lexinfo:morphosyntacticProperty	apertium:Cond3
 apertium:conj	lexinfo:partOfSpeech	lexinfo:conjunction	CONJ	
 apertium:ConNeg	lexinfo:morphosyntacticProperty	apertium:ConNeg		
 apertium:coop	lexinfo:morphosyntacticProperty	apertium:coop		
-apertium:cop	lexinfo:partOfSpeech	lexinfo:copula	VERB	
+apertium:cop	lexinfo:partOfSpeech	lexinfo:copula	AUX
 apertium:cpd	lexinfo:morphosyntacticProperty	apertium:cpd		
 apertium:cs	lexinfo:partOfSpeech	lexinfo:subordinatingConjunction	SCONJ
 apertium:CS	lexinfo:partOfSpeech	lexinfo:subordinatingConjunction	SCONJ
@@ -258,7 +258,8 @@ apertium:Fem	lexinfo:gender	lexinfo:feminine
 apertium:fixedcase	lexinfo:morphosyntacticProperty	apertium:fixedcase		
 apertium:fn	lexinfo:gender	lexinfo:feminine		
 apertium:fn	lexinfo:gender	lexinfo:neuter		
-apertium:frm	lexinfo:morphosyntacticProperty	apertium:frm		
+apertium:frm	lexinfo:morphosyntacticProperty	apertium:frm
+apertium:frm	lexinfo:register	lexinfo:formalRegister
 apertium:fti	lexinfo:tense	lexinfo:future		
 apertium:fti	lexinfo:mood	lexinfo:indicative		
 apertium:fts	lexinfo:tense	lexinfo:future		
@@ -281,9 +282,10 @@ apertium:gen	lexinfo:case	lexinfo:genitiveCase
 apertium:Gen	lexinfo:case	lexinfo:genitiveCase		
 apertium:GEN	lexinfo:case	lexinfo:genitiveCase		
 apertium:genacc	lexinfo:morphosyntacticProperty	apertium:genacc		
-apertium:ger	lexinfo:morphosyntacticProperty	apertium:ger		
-apertium:Ger	lexinfo:morphosyntacticProperty	apertium:Ger		
-apertium:ger_past	lexinfo:morphosyntacticProperty	apertium:ger_past		
+apertium:ger	lexinfo:morphosyntacticProperty	apertium:ger
+apertium:Ger	lexinfo:morphosyntacticProperty	apertium:Ger
+apertium:ger_past	lexinfo:morphosyntacticProperty	apertium:ger_past
+apertium:ger_past	lexinfo:tense	lexinfo:past
 apertium:GERO	lexinfo:morphosyntacticProperty	apertium:GERO		
 apertium:gerps	lexinfo:morphosyntacticProperty	apertium:gerps		
 apertium:gna	lexinfo:morphosyntacticProperty	apertium:gna		
@@ -476,16 +478,16 @@ apertium:padv	lexinfo:morphosyntacticProperty	apertium:padv
 apertium:PAR	lexinfo:morphosyntacticProperty	apertium:PAR		
 apertium:par	lexinfo:case	lexinfo:partitiveCase		
 apertium:parol	lexinfo:morphosyntacticProperty	apertium:parol		
-apertium:part	lexinfo:morphosyntacticProperty	apertium:part		
-apertium:part	lexinfo:morphosyntacticProperty	apertium:part		
-apertium:pass	lexinfo:voice	lexinfo:passiveVoice		
+apertium:part	lexinfo:morphosyntacticProperty	apertium:part
+apertium:part	lexinfo:partOfSpeech	lexinfo:particle	PART
+apertium:pass	lexinfo:voice	lexinfo:passiveVoice
 apertium:past	lexinfo:tense	lexinfo:past		
 apertium:past3p	lexinfo:tense	lexinfo:past		
 apertium:past3p	lexinfo:person	lexinfo:thirdPerson		
 apertium:pasv	lexinfo:morphosyntacticProperty	apertium:pasv		
 apertium:pasv	lexinfo:voice	lexinfo:passiveVoice		
 apertium:pat	lexinfo:partOfSpeech	lexinfo:properNoun	PROPN	
-apertium:pat	lexinfo:morphosyntacticProperty	apertium:pat		
+apertium:pat	lexinfo:morphosyntacticProperty	apertium:pat	
 apertium:Pcle	lexinfo:partOfSpeech	lexinfo:particle	PART	
 apertium:PD	lexinfo:person	apertium:PD		
 apertium:pe	lexinfo:morphosyntacticProperty	apertium:pe		
@@ -685,8 +687,9 @@ apertium:RCmpnd	lexinfo:morphosyntacticProperty	apertium:RCmpnd
 apertium:Rdat	lexinfo:partOfSpeech	lexinfo:postposition	ADP	
 apertium:Rdat	lexinfo:case	lexinfo:dativeCase		
 apertium:re	lexinfo:morphosyntacticProperty	apertium:re		
-apertium:rec	lexinfo:partOfSpeech	reciprocalPronoun		
-apertium:recip	lexinfo:morphosyntacticProperty	apertium:recip		
+apertium:rec	lexinfo:partOfSpeech	lexinfo:reciprocalPronoun
+apertium:recip	lexinfo:morphosyntacticProperty	apertium:recip
+apertium:recip	lexinfo:partOfSpeech	lexinfo:reciprocalPronoun	PRON
 apertium:Recipr	lexinfo:morphosyntacticProperty	apertium:Recipr		
 apertium:red	lexinfo:morphosyntacticProperty	apertium:red		
 apertium:ref	lexinfo:partOfSpeech	lexinfo:reflexivePersonalPronoun	PRON	
@@ -761,7 +764,7 @@ apertium:Superl	lexinfo:degree	lexinfo:superlative
 apertium:supn	lexinfo:verbFormMood	apertium:supn		
 apertium:Sur	lexinfo:partOfSpeech	lexinfo:properNoun		
 apertium:Sur	lexinfo:partOfSpeech	apertium:Sur		
-apertium:sym	lexinfo:morphosyntacticProperty	apertium:sym		
+apertium:sym	lexinfo:partOfSpeech	lexinfo:symbol	SYM
 apertium:TD	lexinfo:morphosyntacticProperty	apertium:TD		
 apertium:temp	lexinfo:case	apertium:temp		
 apertium:ter	lexinfo:morphosyntacticProperty	apertium:ter		
@@ -821,7 +824,8 @@ apertium:vpart	lexinfo:partOfSpeech	lexinfo:particle	PART
 apertium:vpart	lexinfo:morphosyntacticProperty	apertium:vpart		
 apertium:vpost	lexinfo:morphosyntacticProperty	apertium:vpost		
 apertium:vrbnull	lexinfo:morphosyntacticProperty	apertium:vrbnull		
-apertium:web	lexinfo:morphosyntacticProperty	apertium:web		
+apertium:web	lexinfo:morphosyntacticProperty	apertium:web
+apertium:web	lexinfo:partOfSpeech	lexinfo:symbol	SYM
 apertium:XD	lexinfo:morphosyntacticProperty	apertium:XD		
 apertium:ZHG	lexinfo:morphosyntacticProperty	apertium:ZHG		
 apertium:ZIU	lexinfo:morphosyntacticProperty	apertium:ZIU		
